@@ -11,4 +11,6 @@ export class DirectiveComponent {
   subTitleAttribute = 'Attribute';
   image = 'assets/images/directive.png';
   documentation = 'https://angular.io/guide/architecture#directives';
+
+  items: string[] = ['Hello', 'My', 'Name', 'Is', 'Jessica'];
 }

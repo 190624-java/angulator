@@ -58,6 +58,9 @@
         </div>
     </div>
     <div class="panel-footer">
+        <div *ngFor="let item of items">
+            <h1>Item:</h1> <p>{{item}}</p>
+        </div>
         <a href="{{documentation}}">Documentation</a>
     </div>
 </div>

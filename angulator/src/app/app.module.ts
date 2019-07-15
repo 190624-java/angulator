@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RoutingModule } from './routing/routing.module';
 
 //for pokemon example
 import { HttpClientModule } from '@angular/common/http';
@@ -48,7 +49,8 @@ import { DiComponent } from './components/di/di.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
