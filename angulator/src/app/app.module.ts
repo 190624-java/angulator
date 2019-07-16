@@ -24,6 +24,12 @@ import { TemplateComponent } from './components/template/template.component';
 import { TypesComponent } from './components/types/types.component';
 import { TypeScriptComponent } from './components/typescript/typescript.component';
 import { DiComponent } from './components/di/di.component';
+import { DatabindingComponent } from './components/databinding/databinding.component';
+import { StructuralComponent } from './components/structural/structural.component';
+import { FlashcardComponent } from './components/structural/flashcard/flashcard.component';
+import { PipeComponent } from './components/pipe/pipe.component';
+import { HttpComponent } from './components/http/http.component';
+import { PokemonService } from './services/pokemon.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +50,12 @@ import { DiComponent } from './components/di/di.component';
     TemplateComponent,
     TypesComponent,
     TypeScriptComponent,
-    DiComponent
+    DiComponent,
+    DatabindingComponent,
+    StructuralComponent,
+    FlashcardComponent,
+    PipeComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +63,7 @@ import { DiComponent } from './components/di/di.component';
     FormsModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [PokemonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

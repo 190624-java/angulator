@@ -18,6 +18,10 @@ import { DirectiveComponent } from '../components/directive/directive.component'
 import { RoutingComponent } from '../components/routing/routing.component';
 import { ServiceComponent } from '../components/service/service.component';
 import { DiComponent } from '../components/di/di.component';
+import { DatabindingComponent } from '../components/databinding/databinding.component';
+import { StructuralComponent } from '../components/structural/structural.component';
+import { PipeComponent } from '../components/pipe/pipe.component';
+import { HttpComponent } from '../components/http/http.component';
 
 export const routes: Routes = [
   {
@@ -59,6 +63,10 @@ export const routes: Routes = [
   { path: 'di', component: DiComponent},
   { path: 'routing',  component: RoutingComponent },
   { path: 'service',  component: ServiceComponent },
+  { path: 'databinding', component: DatabindingComponent},
+  { path: 'structural', component: StructuralComponent},
+  { path: 'pipe', component: PipeComponent},
+  { path: 'http', component: HttpComponent},
   { path: '**', redirectTo: '/main' }
 ];
 
